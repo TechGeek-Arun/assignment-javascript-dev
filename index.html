@@ -3,20 +3,32 @@
 
   <head>
     <meta charset="UTF-8" />
-    <title>Bar chart of crypto currency</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.0.3/angular-chart.min.js"></script>   
-    <script src="barChart.js"></script>
+    <title>Search object path from json</title> 
+    <script src="search.js"></script>
   </head>
+
   <body>
-      <h1>Crypto Currency in USD</h1>
-        <div ng-app="myApp" ng-controller="myController as ctrl">
-    <canvas id="barChart" 
-    class="chart chart-bar" 
-    chart-data="data"
-    chart-labels="labels"></canvas>    
-    </div>  
+      <h1>Json Data</h1>
+      <pre>
+            {
+                "id": "0001",
+                "type": "donut",
+                "name": "Cake",
+                "image":
+                    {
+                        "url": "images/0001.jpg",
+                        "width": 200,
+                        "height": 200
+                    },
+                "thumbnail":
+                    {
+                        "url": "images/thumbnails/0001.jpg",
+                        "width": 32,
+                        "height": 32
+                    }
+            }
+      </pre>
+      <p>Note:Search Results can be check in console!!!</p>
   </body>
 
 </html>
