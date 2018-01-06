@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bar chart of crypto currency</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.0.3/angular-chart.min.js"></script>   
+    <script src="barChart.js"></script>
+  </head>
+  <body>
+      <h1>Crypto Currency in USD</h1>
+        <div ng-app="myApp" ng-controller="myController as ctrl">
+    <canvas id="barChart" 
+    class="chart chart-bar" 
+    chart-data="data"
+    chart-labels="labels"></canvas>    
+    </div>  
+  </body>
+
+</html>
